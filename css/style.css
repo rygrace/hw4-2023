@@ -78,12 +78,6 @@ a.skip{
 
 
 
-
-
-
-
-
-
   /* Requirement 9 code here -- Do not remove this comment. */
 
   .about.text, .clients.text, .method.text, .contact.text {
@@ -95,18 +89,19 @@ a.skip{
 
   /*Add the media query here.  Make sure to */
 
-@media {
+@media only screen and (min-width: 700px){
   nav{
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
 
-    text-align:right
+    text-align: right;
 
   }
 
   nav li{
     margin-left: 5%;
     margin-right:0;
+    text
   }
 
   
