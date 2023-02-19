@@ -90,7 +90,7 @@ left: -400px;
   /* Requirement 9 code here -- Do not remove this comment. */
 
   .about.text, .clients.text, .method.text, .contact.text {
-   text-align: center; 
+   align-self: auto; 
    max-height: 40vh; 
    overflow: auto;
   }
@@ -100,11 +100,10 @@ left: -400px;
 
 @media screen and (min-width: 800px){
   
-   nav{ 
-    /* I changed nav to header nav to get the media query to work */
-    padding-top: 35px;
+ 
     /* Requirement 10 code here -- Do not remove this comment. */
-
+    nav{ 
+    padding-top: 35px;
     text-align: right;
 
   }
