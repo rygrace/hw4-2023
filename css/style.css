@@ -5,17 +5,25 @@ a.skip{
   -webkit-transition: top 1s ease-out;
   transition: left 1s ease-out;
   z-index: 1;
-  margin: 0px 0px -200px -400px;
-}
-  /* Requirement 1 code here -- Do not remove this comment. */
+  
 
+  /* Requirement 1 code here -- Do not remove this comment. */
+/* margin: 0px 0px -200px -400px;*/
+position: absolute;
+top: -200px;
+left: -400px;
+}
 
 
 
   /* Requirement 2 code here -- Do not remove this comment. */
 
-  nav li :focus {
-    border-top: yellow 10px solid;
+  nav a:focus {
+   text-decoration-line: overline;
+   text-decoration-thickness: 10px;
+   text-decoration-color: yellow;
+   outline: none;
+   /* yellow 10px solid; */
   }
 
 
@@ -78,19 +86,22 @@ a.skip{
 
 
 
+
   /* Requirement 9 code here -- Do not remove this comment. */
 
   .about.text, .clients.text, .method.text, .contact.text {
    text-align: center; 
-   max-height: 30vh; 
+   max-height: 40vh; 
    overflow: auto;
   }
 
 
   /*Add the media query here.  Make sure to */
 
-@media only screen and (min-width: 700px){
-  nav{
+@media screen and (min-width: 800px){
+  
+   nav{ 
+    /* I changed nav to header nav to get the media query to work */
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
 
@@ -101,25 +112,45 @@ a.skip{
   nav li{
     margin-left: 5%;
     margin-right:0;
-    text
+   
   }
 
   
   /* Requirement 11 code here -- Do not remove this comment. */
-
+  a.skip:focus{
+    position: relative;
+    top: 220px;
+    left: 400px;
+  }
 
 
   /* Requirement 12 code here -- Do not remove this comment. */
   
+  .container{
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 300px 300px 300px 300px;
+  }
 
 
   /* Requirement 13 code here -- Do not remove this comment. */
+  .about, .clients-image, .method, .contact-image {
+    grid-column: 3 / span 2;
+  
+  }
  
 
   /* Requirement 14 code here -- Do not remove this comment. */
+
+  .clients, .contact, .about-image, .method-image {
+    grid-column: 2 / span 2;
+  }
  
 
   /* Requirement 15 code here -- Do not remove this comment. */
+  .about-image, .clients-image, .method-image, .contact-image{
+    overflow: hidden;
+  }
 }
 
 /** Code for prefers reduced motion **/
