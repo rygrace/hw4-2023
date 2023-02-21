@@ -90,9 +90,9 @@ left: -400px;
   /* Requirement 9 code here -- Do not remove this comment. */
 
   .about.text, .clients.text, .method.text, .contact.text {
-   align-self: auto; 
+   align-self: center; 
    max-height: 40vh; 
-   overflow: auto;
+   overflow: scroll;
   }
 
 
